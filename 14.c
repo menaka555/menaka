@@ -2,11 +2,11 @@
 
 int main() {
   char a[100];
-  int i,k=0,l=0;
-  scanf("%s",a);
-  for(i=0;a[i]!='\0';i++)
+  int i,k=0,l;
+  scanf("%d",&l);
+  for(i=0;i<l;i++)
   {
-      l++;
+      scanf("%c",&a[i]);
   }
   for(i=l-1;i>=0;i--)
   {
