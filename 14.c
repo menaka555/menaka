@@ -10,6 +10,8 @@ int main() {
   }
   for(i=l-1;i>=0;i--)
   {
+      if((a[i]>=97)&&(a[i]<=122))
+      {
       if((a[i]=='a')||(a[i]=='e')||(a[i]=='i')||(a[i]=='o') ||(a[i]=='u'))
       {
       k++;
@@ -19,6 +21,9 @@ if(k==0)
 printf("%c",a[i]);
 }
 k=0;
+}
+else
+printf("%c",a[i]);
 }
 return 0;
 }
