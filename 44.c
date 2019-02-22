@@ -9,6 +9,12 @@ int main() {
    {
        l++;
    }
+   if(k>l)
+   {
+       printf("%s",a);
+   }
+   else
+   {
    for(i=l-k;i<l;i++)
    {
        printf("%c",a[i]);
@@ -20,6 +26,6 @@ int main() {
        {
            printf("%c",a[i]);
        }
-   }
+   }}
    return 0;
 }
