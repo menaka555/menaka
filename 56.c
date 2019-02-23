@@ -9,6 +9,7 @@ int main()
         if(a[i]==c)
         {
     printf("%d",i+1);
+            break;
         }}
     return 0;
 }
