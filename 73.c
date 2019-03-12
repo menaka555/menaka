@@ -14,7 +14,7 @@ int main() {
        {
        if(a[i]==k)
        {
-           printf("%d",i);
+           printf("%d",i+1);
            break;
        }}
    }
