@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main()
+{
+    int a,b,i,k=0,c[100],d[100],r=0,j=0,m,n=0;
+    scanf("%d%d",&a,&b);
+    for(i=0;i<b;i++)
+    {
+        c[k]=i;
+        k++;
+    }
+    while(a)
+    {
+        r=a%10;
+        d[j]=r;
+        j++;
+        a=a/10;
+    }
+    for(i=0;i<k;i++)
+    {
+        for(m=0;m<j;m++)
+        {
+            if(c[i]==d[m])
+            {
+                n++;
+    if(n+1==k){
+    printf("yes");
+    break;}
+            }}}
+            if(n+1!=k)
+            printf("no");
+}
