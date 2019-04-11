@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+int main() {
+   int n,a[10000],i,c=0,d=0,h=0,g=0;
+   scanf("%d",&n);
+   for(i=0;i<n;i++)
+   scanf("%d",&a[i]);
+   c=a[0];
+   for(i=0;i<n;i++)
+   {
+       if(a[i]<c)
+       c=a[i];
+   }
+   for(i=0;i<n;i++)
+   {
+       if(a[i]!=c)
+       {
+           d++;
+       }
+       if(a[i]==c)
+       break;
+   }
+   h=a[0];
+   for(i=0;i<n;i++)
+   {
+       if(a[i]>h)
+       h=a[i];
+   }
+   for(i=0;i<n;i++)
+   {
+       if(a[i]!=h)
+       {
+           g++;
+       }
+       if(a[i]==h)
+      break;
+   }
+   printf("%d",(g-1)-(d-1));
+}
